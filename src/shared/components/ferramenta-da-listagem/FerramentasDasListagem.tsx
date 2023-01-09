@@ -1,7 +1,7 @@
 import { Box, Button, Icon, InputAdornment, Paper, TextField, useTheme } from '@mui/material';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
-interface  IBarraDeFerramentasProps{
+interface  IFerramentasDaListagemProps{
   textoDaBusca?: string;
   mostrarInputBusca?: boolean;
   aoMudarTextoDeBusca?: (novoTexto: string) => void;
@@ -11,7 +11,7 @@ interface  IBarraDeFerramentasProps{
 
 }
 
-export const BarraDeFerramentas:  React.FC<IBarraDeFerramentasProps> = ({
+export const FerramentasDaListagem:  React.FC<IFerramentasDaListagemProps> = ({
   textoDaBusca = '',
   aoMudarTextoDeBusca,
   mostrarInputBusca = false,
