@@ -15,7 +15,6 @@ export const ListagemDePessoas: React.FC = () => {
     return searchParams.get('busca') || '';
   }, [searchParams]);
 
-
   useEffect(() => {
 
     debounce(() => {
