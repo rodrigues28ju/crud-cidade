@@ -50,9 +50,9 @@
     },
     {
       "id": 12,
-      "cidadeId": 1,
-      "email": "Juca@gmail.com",
-      "nomeCompleto": "Juca Silva"
+      "nomeCompleto": "Martin da silva",
+      "email": "martin@gmail.com",
+      "cidadeId": 1
     },
     {
       "id": 13,
@@ -119,6 +119,10 @@
     {
       "nome": "Tramandaí",
       "id": 7
+    },
+    {
+      "nome": "Rio de Janeiro",
+      "id": 8
     }
   ],
   "auth": {
