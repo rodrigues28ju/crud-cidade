@@ -2,7 +2,7 @@
   "pessoas": [
     {
       "id": 3,
-      "nomeCompleto": "Carlos Antonio",
+      "nomeCompleto": "Carlos Silva",
       "email": "carlos@gmail.com",
       "cidadeId": 1
     },
@@ -89,12 +89,6 @@
       "email": "geronimo@gmail.com",
       "cidadeId": 5,
       "id": 157
-    },
-    {
-      "id": 158,
-      "nomeCompleto": "Maria Paula",
-      "email": "casa@gmail.com",
-      "cidadeId": 2
     }
   ],
   "cidades": [
@@ -126,5 +120,8 @@
       "nome": "Tramandaí",
       "id": 7
     }
-  ]
+  ],
+  "auth": {
+    "accessToken": "aaaaaaaaaa.bbbbbbbbbb.cccccccc"
+  }
 }
