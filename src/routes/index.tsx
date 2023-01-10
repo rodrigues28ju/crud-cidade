@@ -31,7 +31,7 @@ export const AppRoutes = () => {
 
       <Route path="/cidades" element={<ListagemDeCidade />} />
       {/* <Route path="/cidades/detalhe/:id" element={<Dashboard />} /> */}
-
+      
       <Route path="*" element={<Navigate to="/pagina-inicial" />} />
     </Routes>
   );
