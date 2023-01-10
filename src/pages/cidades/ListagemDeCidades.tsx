@@ -25,7 +25,7 @@ export const ListagemDeCidade: React.FC = () => {
         />
       }
     >
-
     </LayoutBaseDePagina>
   );
 };
+
