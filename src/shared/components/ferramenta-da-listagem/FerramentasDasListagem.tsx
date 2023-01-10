@@ -1,50 +1,41 @@
 import { Box, Button, Icon, InputAdornment, Paper, TextField, useTheme } from '@mui/material';
+
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import { Environment } from '../../environment';
 
-interface  IFerramentasDaListagemProps{
+
+interface IFerramentasDaListagemProps {
   textoDaBusca?: string;
   mostrarInputBusca?: boolean;
   aoMudarTextoDeBusca?: (novoTexto: string) => void;
   textoBotaoNovo?: string;
   mostrarBotaoNovo?: boolean;
-  aoClicarEmNovo?: () => void; 
-
+  aoClicarEmNovo?: () => void;
 }
-
-export const FerramentasDaListagem:  React.FC<IFerramentasDaListagemProps> = ({
+export const FerramentasDaListagem: React.FC<IFerramentasDaListagemProps> = ({
   textoDaBusca = '',
   aoMudarTextoDeBusca,
   mostrarInputBusca = false,
   aoClicarEmNovo,
   textoBotaoNovo = 'Novo',
-  mostrarBotaoNovo =true,
-   
-
-
-
-  
-
+  mostrarBotaoNovo = true,
 }) => {
-
   const theme = useTheme();
 
-
-
   return (
-    <Box  
+    <Box
       gap={1}
-      marginX={1}    
-      padding={1} 
-      paddingX={2} 
-      display="flex" 
-      alignItems='center' 
+      marginX={1}
+      padding={1}
+      paddingX={2}
+      display="flex"
+      alignItems="center"
       height={theme.spacing(5)}
-      component={Paper}>
-      
+      component={Paper}
+    >
       {mostrarInputBusca && (
-        <TextField 
-          size='small'
+        <TextField
+          size="small"
           value={textoDaBusca}
           InputProps={{
             startAdornment: (
@@ -53,12 +44,12 @@ export const FerramentasDaListagem:  React.FC<IFerramentasDaListagemProps> = ({
               </InputAdornment>
             ),
           }}
-          placeholder='{Environment.INPUT_DE_BUSCA}'
+          placeholder={Environment.INPUT_DE_BUSCA}
           onChange={(e) => aoMudarTextoDeBusca?.(e.target.value)}
         />
       )}
 
-      <Box flex={1} display='flex' justifyContent='end'>
+      <Box flex={1} display="flex" justifyContent="end">
         {mostrarBotaoNovo && (
           <Button
             color='primary'
@@ -69,7 +60,6 @@ export const FerramentasDaListagem:  React.FC<IFerramentasDaListagemProps> = ({
           >{textoBotaoNovo}</Button>
         )}
       </Box>
-      
     </Box>
   );
 };
