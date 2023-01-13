@@ -25,3 +25,6 @@ Autores
 @MarianaHerbst
 @IngridCassia
 @Maria Fernanda
+
+
+![WhatsApp Image 2023-01-11 at 10 11 46](https://user-images.githubusercontent.com/114073501/211823485-2523bcb8-4f8c-4bc8-995d-e63f18864aad.jpeg)
